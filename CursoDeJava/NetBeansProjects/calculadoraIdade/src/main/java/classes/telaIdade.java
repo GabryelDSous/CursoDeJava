@@ -38,7 +38,6 @@ public class telaIdade extends javax.swing.JFrame {
 
         txtAN.setModel(new javax.swing.SpinnerNumberModel(1500, 1500, 2025, 1));
 
-        btnCalc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/calculator-8-32.png"))); // NOI18N
         btnCalc.setText("Calcular");
         btnCalc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -52,8 +51,6 @@ public class telaIdade extends javax.swing.JFrame {
         lblIdade.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblIdade.setForeground(new java.awt.Color(255, 0, 0));
         lblIdade.setText("0");
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/person.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -96,7 +93,7 @@ public class telaIdade extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(21, 21, 21)
                         .addComponent(jLabel4)))
-                .addContainerGap(43, Short.MAX_VALUE))
+                .addContainerGap(129, Short.MAX_VALUE))
         );
 
         pack();
