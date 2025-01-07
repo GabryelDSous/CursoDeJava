@@ -96,7 +96,7 @@ public class telaTriangulo extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel6.setText("B");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Gabryel\\Downloads\\texte.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/triangulo.png"))); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel7.setText("C");
