@@ -62,6 +62,7 @@ public class telaTriangulo extends javax.swing.JFrame {
         controlUm.setMaximum(20);
         controlUm.setToolTipText("");
         controlUm.setValue(0);
+        controlUm.setExtent(10);
         controlUm.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 controlUmStateChanged(evt);
