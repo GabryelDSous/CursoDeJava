@@ -13,7 +13,7 @@ public class nivelFacil {
             tentativas++;
             System.out.print("Qual seu palpite: ");
             teclado = scnr.nextInt();    
-            if(teclado < 1 || teclado > 10) System.out.println("O número deve estar entre 1 e 50");
+            if(teclado < 1 || teclado > 10) System.out.println("O número deve estar entre 1 e 10");
             else{
                 if(teclado < numRandom) {
                     if(tentativas == 5) break;
