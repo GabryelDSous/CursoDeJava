@@ -3,13 +3,14 @@ package meubanco;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.time.LocalDateTime;
+import java.util.Random;
 // Inicio Classe
 public class Escolhas {
     // Variaveis
     byte escolha;
     short anoNasc;
-    byte tipo;
     String nome;
+    int numConta;
     // Fechar programa para menores de 18
     boolean fechar = false;
     // Construtor
@@ -38,6 +39,30 @@ public class Escolhas {
 
     public void setTipo(byte tipo) {
         this.tipo = tipo;
+    }
+
+    public int getNumConta() {
+        return numConta;
+    }
+
+    public void setNumConta(int numConta) {
+        this.numConta = numConta;
+    }
+
+    public short getAnoNasc() {
+        return anoNasc;
+    }
+
+    public void setAnoNasc(short anoNasc) {
+        this.anoNasc = anoNasc;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
     
     // Instanciando o scanner, ArrayList e o Ano
@@ -88,23 +113,12 @@ public class Escolhas {
                 }
                 if(this.getFechar()) break;
                 else{
-                    System.out.print("Qual tipo da conta\n[1]Polpança\n[2]Corrente\nTIPO: ");
-                    this.setTipo(scanner.nextByte());
-                    for(boolean loop = true; loop == true;){
-                        if(this.getTipo() == 1 || this.getTipo() == 2){
-                            System.out.println("É um numero");
-                        } else{
-                            System.out.println("Não é um número");
-                        }
-                    }
+                    Random random = new Random();
+                    int numRandom = random.nextInt(1000) + 1;
+                    this.setNumConta(numRandom);
                 }
-                
-            
-            
-            
-//            conta.setNome(nome);
-//            conta.setAnoNasc(anoNasc);
-//            Abanco.add(conta);
+                ArrayList<TiposContas> Contas = new ArrayList<TiposContas>();
+                Contas.add(this.getNome());
             }
         }
     }

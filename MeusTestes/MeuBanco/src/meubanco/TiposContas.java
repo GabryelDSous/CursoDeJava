@@ -10,7 +10,6 @@ public class TiposContas {
         this.anoNasc = anoNasc;
         this.saldo = saldo;
         this.numConta = numConta;
-        this.tipo = tipo;
     }
 
     public String getNome() {
@@ -44,15 +43,6 @@ public class TiposContas {
     public void setNumConta(short numConta) {
         this.numConta = numConta;
     }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
     
     
     public String mostraStatus(){
