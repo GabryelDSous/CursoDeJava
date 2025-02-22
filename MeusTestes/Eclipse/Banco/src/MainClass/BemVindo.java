@@ -8,6 +8,8 @@ public class BemVindo {
 		int esc = 0;
 		// Instanciando classe Scanner
 		Scanner scanner = new Scanner(System.in);
+		// Instanciando Classe verificador
+		Verificador Verificar = new Verificador();
 		System.out.println("========== BEM-VINDO(A) AO BANCO ==========");
 		while(esc != 6) {
 			System.out.println("---------------------------");
@@ -15,30 +17,13 @@ public class BemVindo {
 			System.out.println("6 - Sair.");
 			System.out.println("---------------------------");
 			System.out.print("Qual sua escolha: ");
-			int escolha;
-			lEscolha:
-			while(true) {
-				try {
-					escolha = scanner.nextInt();
-					if(escolha < 1 || escolha > 6) {
-						scanner.nextLine();
-						System.out.print("Escolha um número do menu: ");
-					} else {
-						esc = escolha;
-						break lEscolha;
-					}
-					
-				} catch(InputMismatchException e) {
-					if(!scanner.hasNextInt()) {
-						scanner.nextLine();
-						System.out.print("Escolha uma opção Numérica: ");
-					} else {
-						escolha = scanner.nextInt();
-						break lEscolha;
-					}
-				}
-			}
+			int escolha = Verificar.Verificar();
+			
+			
+			// Funções
+			if(escolha == 1) System.out.println("Funciona 1");
 		}
+		
 	}
 
 }
