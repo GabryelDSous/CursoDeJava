@@ -14,7 +14,6 @@ public class BemVindo {
 		// Instanciando Classe verificador
 		Verificador Verificar = new Verificador();
 		System.out.println("========== BEM-VINDO(A) AO BANCO ==========");
-		bemVindo:
 		while(true) {
 			System.out.println("---------------------------");
 			System.out.println("1 - Criar Conta.");
@@ -26,8 +25,8 @@ public class BemVindo {
 			
 			
 			// Funções
-			if(escolha == 1) Conta.CriarConta();
-			if(escolha == 6) break bemVindo;
+			if(escolha == 1) Conta.CriarConta();;
+			if(escolha == 6) break;
 		}
 		
 	}
