@@ -4,10 +4,9 @@ import java.util.InputMismatchException;
 
 public class Verificador {
 	private int escolha;
-	private int esc;
 	
-	// Metodo principal
-	public int Verificar() {
+	// esse verifica de 1 a 6
+	public int VerificarComLimite() {
 		Scanner scanner = new Scanner(System.in);
 		lEscolha:
 			while(true) {
@@ -17,7 +16,6 @@ public class Verificador {
 						scanner.nextLine();
 						System.out.print("Escolha um número do menu: ");
 					} else {
-						esc = escolha;
 						break lEscolha;
 					}
 					
@@ -33,4 +31,6 @@ public class Verificador {
 			}
 		return escolha;
 	}
+	
+
 }
