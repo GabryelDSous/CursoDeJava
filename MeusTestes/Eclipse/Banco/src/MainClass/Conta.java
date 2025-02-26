@@ -14,6 +14,7 @@ public class Conta implements Funcoes{
 	// Variaveis
 	private String nome;
 	private short anoNasc;
+	private int senha;
 
 	// Metodos getters e setters
 	private String getNome() {
@@ -32,6 +33,14 @@ public class Conta implements Funcoes{
 		this.anoNasc = verificador.VerificarIdade();
 	}
 
+	private int getSenha() {
+		return senha;
+	}
+
+	private void setSenha() {
+		this.senha = verificador.VerificarSenha();
+	}
+
 	// Metodo Criar conta
 	@Override
 	public void CriarConta() {
@@ -40,6 +49,8 @@ public class Conta implements Funcoes{
 		this.setNome();
 		System.out.print("Qual o ano do seu nascimento: ");
 		this.setAnoNasc();
+		System.out.print("Informe uma senha: ");
+		this.setSenha();
 	}
 	
 	

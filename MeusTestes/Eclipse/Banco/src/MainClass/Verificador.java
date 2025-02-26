@@ -65,5 +65,20 @@ public class Verificador {
 		
 		return anoNasc;
 	}
+	
+	// Verificador de senha com limite de 4 digitos
+	public int VerificarSenha() {
+		Scanner scanner = new Scanner(System.in);
+		String senha;
+		int senhaValida;
+		while(true) {
+			senha = scanner.nextLine();
+			if(senha.matches("\\d{1,5}")) {
+				senhaValida = Integer.parseInt(senha);
+				break;
+			} else System.out.print("A senha deve conter no maximo 5 digitos: ");
+		}
+		return senhaValida;
+	}
 
 }
