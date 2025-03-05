@@ -1,5 +1,6 @@
 package MainClass;
 import java.util.Scanner;
+import java.util.Random;
 import java.util.InputMismatchException;
 import java.time.LocalDateTime;
 public class Verificador {
@@ -79,6 +80,13 @@ public class Verificador {
 			} else System.out.print("A senha deve conter no maximo 5 digitos: ");
 		}
 		return senhaValida;
+	}
+	
+	public int gerarNumConta() {
+		Random random = new Random();
+		int numConta = random.nextInt(99999);
+		
+		return numConta;
 	}
 
 }

@@ -17,6 +17,7 @@ public class BemVindo {
 		while(true) {
 			System.out.println("---------------------------");
 			System.out.println("1 - Criar Conta.");
+			System.out.println("2 - Acessar sua conta.");
 			System.out.println("6 - Sair.");
 			System.out.println("---------------------------");
 			System.out.print("Qual sua escolha: ");
